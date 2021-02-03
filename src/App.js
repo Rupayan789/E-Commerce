@@ -16,7 +16,7 @@ class App extends React.Component{
   
   unsubcribeFromAuth=null;
   componentDidMount(){
-    const { setCurrentUser,currentUser }=this.props
+    const { currentUser}=this.props
     this.unsubcribeFromAuth=auth.onAuthStateChanged(async userAuth=>{
       if(userAuth)
       {
@@ -33,7 +33,7 @@ class App extends React.Component{
       setCurrentUser(
         userAuth
       )
-
+      // addCollectionAndDocuments('collections',collectionsArray.map(({title,items})=>({title,items})));
 
     })
   }
@@ -42,7 +42,7 @@ class App extends React.Component{
   }
   render()
   {
-    console.log(process.env.REACT_APP_KEY)
+    
     return (
     <div className="App">
     <Header />

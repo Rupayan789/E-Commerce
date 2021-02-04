@@ -29,7 +29,7 @@ class App extends React.Component{
           })
         })
       }
-      console.log(currentUser);
+      // console.log(currentUser);
       setCurrentUser(
         userAuth
       )

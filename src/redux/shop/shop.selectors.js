@@ -1,4 +1,4 @@
-import { createSelector } from 'reselect';
+import { createSelector, createStructuredSelector } from 'reselect';
 
 const selectShop = (state) => state.shop;
 
@@ -17,3 +17,8 @@ export const selectCollectionsForPreview = createSelector(
 export const selectCollection = collectionUrlParam =>
   createSelector([selectCollections], collections=>(collections?
     collections[collectionUrlParam]:null));
+
+    export const selectIsCollectionFetching=createSelector([selectShop],shop=>shop.isfetching)
+
+    export const selectIsCollectionLoaded=createSelector([selectShop],
+      shop=>!!shop.collections)

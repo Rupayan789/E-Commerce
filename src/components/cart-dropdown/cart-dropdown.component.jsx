@@ -19,8 +19,9 @@ const CartDropdown=({ cartItems ,history,dispatch})=>(
     }
     </div>
     <CustomButton onClick={()=>{
-        dispatch(toggleCartHidden())
-        history.push('./checkout')}}>GO TO CHECKOUT</CustomButton>
+       
+        history.push('/checkout')
+        dispatch(toggleCartHidden())}}>GO TO CHECKOUT</CustomButton>
 
     </div>
 )

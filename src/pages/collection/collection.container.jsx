@@ -7,7 +7,7 @@ import CollectionPage from '../collection/collection.component'
 
 
 const mapStateToProps=createStructuredSelector({
-    isLoading:(state)=>!selectIsCollectionLoaded(state)
+    isLoading:state=>!selectIsCollectionLoaded(state)
 })
 
 const CollectionPageContainer=compose(

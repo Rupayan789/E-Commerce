@@ -23,7 +23,7 @@ class Shoppage extends React.Component{
                 const {match}=this.props;
                 return (<div className="shop-page">
                 <Route exact path={`${match.path}`} component={CollectionOverviewContainer}/>
-                <Route path={`${match.path}/:categoryId`} component={CollectionPageContainer} />
+                <Route path={`${match.path}/:collectionId`} component={CollectionPageContainer} />
                 </div>)
         }
         

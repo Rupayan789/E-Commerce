@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import { connect } from 'react-redux'
-import { auth,createUserProfileDocument} from '../../firebase/firebase.utils';
+
 import FormInput from '../Form-Input/formInput.component';
 import CustomButton from '../customButton/custombutton.component';
 import { signUpStart} from '../../redux/user/user.action'
@@ -70,7 +70,10 @@ const Signup = ({signUpStart}) => {
                      label="ConfirmPassword"
                      required
                 />
+                <div className="btn-custom">
                 <CustomButton type="submit">Sign Up</CustomButton>
+                </div>
+                
                 
 
 

@@ -42,8 +42,8 @@ const SignIn = ({emailSignInStart,googleSignInStart})=> {
                     value={password} 
                     label="password" required/>
                     <div className="buttons">
-                    <CustomButton type="submit">Sign In</CustomButton>
-                    <CustomButton type="button" onClick={googleSignInStart} isGoogleSignIn>Sign In with Google</CustomButton>
+                    <CustomButton  type="submit">Sign In</CustomButton>
+                    <CustomButton  type="button" onClick={googleSignInStart} isGoogleSignIn>Sign In with Google</CustomButton>
                     </div>
                     
                 </form>

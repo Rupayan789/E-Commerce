@@ -1,7 +1,6 @@
 import  React, { useEffect } from "react";
 import CollectionOverviewContainer from "../../components/collection-overview/collection-overview.container";
 import { Route } from 'react-router-dom'
-import CollectionPage from '../../pages/collection/collection.component'
 
 import {connect} from 'react-redux'
 

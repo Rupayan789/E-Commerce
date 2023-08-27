@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
@@ -13,7 +14,11 @@ export function renderWithProviders(
   } = {}
 ) {
   const Wrapper = ({ children }) => {
-    return <Provider store={store}>{children}</Provider>;
+    return (
+      <Provider store={store}>
+        <BrowserRouter>{children}</BrowserRouter>
+      </Provider>
+    );
   };
 
   return {
